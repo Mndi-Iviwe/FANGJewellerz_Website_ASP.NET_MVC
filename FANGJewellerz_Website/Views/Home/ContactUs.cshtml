@@ -1,0 +1,40 @@
+﻿@{
+
+}
+<div class="contact-us">
+    <h2 class="heading">Contact Us</h2>
+
+    <form action="/submit-contact" method="POST">
+        <div class="inputBox">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="inputBox">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <div class="inputBox">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+
+        <div class="inputBox">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+
+        <div class="inputBox">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+
+        <input type="submit" value="Submit" class="btn">
+    </form>
+
+</div>

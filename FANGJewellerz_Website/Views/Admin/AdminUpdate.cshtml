@@ -1,0 +1,24 @@
+﻿@{
+
+}
+<div class="admin-container">
+
+
+    <div class="admin-prod-form centered">
+
+
+
+        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+            <h3 class="title">update the product</h3>
+            <input type="text" class="box" name="product_name" value="<?php echo $row['prodName']; ?>" placeholder="enter the product name">
+            <input type="number" min="0" class="box" name="product_price" value="<?php echo $row['prodPrice']; ?>" placeholder="enter the product price">
+            <input type="file" class="box" name="product_image" accept="image/png, image/jpeg, image/jpg">
+            <input type="submit" value="Update Product" name="update_product" class="prod_btn">
+            <a href="Admin.html.php" class="prod-btn">Nevermind, Back!</a>
+        </form>
+
+
+
+    </div>
+
+</div>

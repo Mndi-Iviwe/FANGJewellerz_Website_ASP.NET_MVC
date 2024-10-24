@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FANGJewellerz_Website</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FANGJewellerz_Website.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="nav-header">
+                
+                <div class="nav-icon">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/Images/fangtastic logo.jpeg" alt="Logo FANGJewlerz" class="circle-logo">
+                    <h4 class="company-name">FANGTASTIC™</h4>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav-div">
+                    <nav>
+                        <ul class="nav-links">
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Products">FANG Products</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="NewsFeed">News & Updates</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="Cart.html.php" id="cartButton"><i class="fa-solid fa-cart-shopping"></i><span><?php echo $row_count; ?></span></a>
+
+                    <a href="/FANGJEWELLERZ WEBSITE/Auth/RegisterForm.html.php" id="userButton"><i class="fa-solid fa-user"></i></a>
+                </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+                &copy; 2024 - FANGJewellerz_Website
+
+            <div class="footer-credit">
+                <div class="social-icons">
+                    <a href="https://za.pinterest.com/alexandriianyathii26/fangtastic-sa-pinspo/"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/fangtasticsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/discover/tooth-gem-fangs"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <nav>
+                    <ul class="footer-nav-links">
+                        <li><a href="Index.html.php">Homepage</a></li>
+                        <li><a href="Products.html.php">Products</a></li>
+                        <li><a href="NewsPage.html.php">News & Updates</a></li>
+                    </ul>
+                </nav>
+                <p>Go To: Mo Piiercings</p>
+                <p>155 Smit Street, Braamfontein</p>
+                <p>CopyRight &copy;2024; Designed By <span class="designer">FANGJewellerz</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

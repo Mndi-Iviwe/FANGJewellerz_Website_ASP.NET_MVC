@@ -1,0 +1,107 @@
+﻿@{
+
+}
+<section class="store-prices">
+    <div class="price-header">
+        <h1 class="heading">Selection & Prices</h1>
+    </div>
+
+    <div class="price-container">
+
+        <table>
+            <tr>
+                <th><u>SWARVOSKI GEMS</u></th>
+                <th><u>PRICE</u></th>
+            </tr>
+            <tr>
+                <td>Small Crystal</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Large Crystal</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Tinted Crystal</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Neon Gems</td>
+                <td>R180</td>
+            </tr>
+            <tr>
+                <td>2 For 1</td>
+                <td>R250</td>
+            </tr>
+            <tr>
+                <td>Crystal Shapes</td>
+                <td>R250</td>
+            </tr>
+            <tr>
+                <td>Butterfly Set</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Dragon Fly Set</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Opal Butterfly</td>
+                <td>R400</td>
+            </tr>
+            <tr>
+                <td>Opal Heart</td>
+                <td>R400</td>
+            </tr>
+            <tr>
+                <td>Chandelier Tooth</td>
+                <td>R420</td>
+            </tr>
+            <tr>
+                <td>Halo Tooth</td>
+                <td>R100 p/Gem</td>
+            </tr>
+
+
+
+            <tr>
+                <td>18K Gold/White Gold Charm</td>
+                <td>Enquire</td>
+            </tr>
+
+
+        </table>
+
+
+    </div>
+
+
+
+</section>
+
+
+<!---------------User Cart Section---------------->
+<div class="prod-container">
+    <section class="products">
+
+        <h1 class="heading">latest products</h1>
+
+        <div class="box-container">
+
+            <form action="" method="post">
+                <div class="box">
+                    <img src="Product Images/<?php echo $fetch_product['prodImage']; ?>" alt="">
+                    <h3><?php echo $fetch_product['prodName']; ?></h3>
+                    <div class="price">R<?php echo $fetch_product['prodPrice']; ?>/-</div>
+                    <input type="hidden" name="product_name" value="<?php echo $fetch_product['prodName']; ?>">
+                    <input type="hidden" name="product_price" value="<?php echo $fetch_product['prodPrice']; ?>">
+                    <input type="hidden" name="product_image" value="<?php echo $fetch_product['prodImage']; ?>">
+                    <input type="submit" class="btn" value="Add to Cart" name="add_to_cart">
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+</div>
